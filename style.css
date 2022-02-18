@@ -3,15 +3,15 @@
     font-family: Gotham Rounded, sans-serif ;
 }
 .clock{
-    width: 400px;
-    height: 400px;
+    width: 25rem;
+    height: 25rem;
     border-radius: 50%;
-    border: 5px solid black;
+    border: .5rem solid black;
     position: relative;
     background-color:honeydew;
 }
 body{
-    background: linear-gradient(to right, rgb(211, 198, 16), rgb(28, 11, 61));
+    background: linear-gradient(to left, rgb(12, 9, 167), rgb(26, 30, 41));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,9 +46,9 @@ body{
     bottom: 50%;
     left: 50%;
     background-color: black;
-    border: 1px solid white;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border: .1rem solid white;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
     transform-origin: bottom;
     z-index: 10;
     transform: translateX(-50%) rotate(calc(var(--rotation)*1deg));
@@ -58,8 +58,8 @@ body{
     position: absolute;
     background-color: black;
     z-index: 11;
-    width: 20px;
-    height: 20px;
+    width: 2rem;
+    height: 2rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -67,17 +67,27 @@ body{
 }
 
 .clock .hand.second{
-    width: 5px;
+    width: .4rem;
     height: 45%;
     background-color: red;
 }
 .clock .hand.minute{
-    width: 9px;
+    width: .6rem;
     height: 40%;
     background-color: black;
 }
 .clock .hand.hour{
-    width: 12px;
+    width: .9rem;
     height: 35%;
     background-color: black;
+}
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width:760px){
+    html{
+        font-size: 45%;
+    }
 }
